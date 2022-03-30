@@ -13,7 +13,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 # app 정의
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server    #외부에서 실행하기 위함
 # 데이터를 입력하는 부분
 # csv 파일 읽기
 df = pd.read_csv("C:/Users/ddoba/ai_edu/dami/Test_Data.csv")
